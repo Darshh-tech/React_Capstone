@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --cinematic-bg: #020617;
+  --cinematic-surface: rgba(15, 23, 42, 0.88);
+  --cinematic-border: rgba(248, 195, 0, 0.18);
+  --cinematic-accent: #facc15;
+  --cinematic-text: #e2e8f0;
+  --cinematic-muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(96, 165, 250, 0.12), transparent 26%),
+    radial-gradient(circle at top right, rgba(244, 114, 182, 0.06), transparent 25%),
+    linear-gradient(180deg, var(--cinematic-bg) 0%, #020617 100%);
+  color: var(--cinematic-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e1726;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(250, 204, 21, 0.9), rgba(234, 179, 8, 0.75));
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(251, 191, 36, 1), rgba(245, 158, 11, 0.9));
+}
+
